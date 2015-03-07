@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './index.js',
+    entry: './src/device.js',
     output: {
         filename: './dist/bundle.js',
         sourceMapFilename: './dist/bundle.map',
