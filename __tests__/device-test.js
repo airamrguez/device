@@ -8,7 +8,7 @@ describe('device detection', function() {
         window.navigator.__defineGetter__('userAgent', function(){
             return userAgent;
         });
-        let Device = require('../lib/device');
+        let Device = require('../src/device');
         let isChrome = Device.isChrome();
         expect(isChrome).toBe(true);
     });
@@ -18,7 +18,7 @@ describe('device detection', function() {
         window.navigator.__defineGetter__('userAgent', function(){
             return userAgent;
         });
-        let Device = require('../lib/device');
+        let Device = require('../src/device');
         let isIPhone = Device.isIPhone();
         expect(isIPhone).toBe(true);
     });
@@ -28,7 +28,7 @@ describe('device detection', function() {
         window.navigator.__defineGetter__('userAgent', function(){
             return userAgent;
         });
-        let Device = require('../lib/device');
+        let Device = require('../src/device');
         let isIPad = Device.isIPad();
         expect(isIPad).toBe(true);
     });
@@ -38,7 +38,7 @@ describe('device detection', function() {
         window.navigator.__defineGetter__('userAgent', function(){
             return userAgent;
         });
-        let Device = require('../lib/device');
+        let Device = require('../src/device');
         let isAndroid = Device.isAndroid();
         expect(isAndroid).toBe(true);
     });
